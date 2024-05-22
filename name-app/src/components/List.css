@@ -1,0 +1,42 @@
+/* styles.css */
+
+/* Futuristic CSS for List Component */
+body {
+    background: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #00ffcc; /* Neon green */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin: 10px 0;
+    background: #1e1e1e;
+    border: 1px solid #00ffcc; /* Neon green border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  li:hover {
+    background: #00ffcc; /* Neon green background on hover */
+    color: #121212; /* Dark text color on hover */
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  

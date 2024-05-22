@@ -1,0 +1,39 @@
+/* src/components/Card.css */
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+.card {
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 300px;
+  margin: 16px;
+  padding: 16px;
+  transition: transform 0.2s;
+  color: #fff;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #ffcc00;
+}
+
+.card-title {
+  font-size: 1.8em;
+  margin: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #ffcc00;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 1em;
+  color: #dcdcdc;
+}
+
+.card p strong {
+  color: #ffcc00;
+}
