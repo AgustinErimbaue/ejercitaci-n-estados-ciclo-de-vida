@@ -1,5 +1,9 @@
-/* src/components/Card.css */
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+.card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  justify-content:space-between;
+}
 
 .card {
   background-color: #1c1c1c;

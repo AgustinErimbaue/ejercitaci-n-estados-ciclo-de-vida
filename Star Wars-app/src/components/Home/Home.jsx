@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Card from "../Card/Card";
+import "./Home.css";
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
@@ -8,6 +9,7 @@ const Home = () => {
 
   const getCharacter = () => {
     axios
+
       .get(API_URL)
       .then((res) => {
         setCharacters(res.data.results);
@@ -16,8 +18,9 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <button onClick={getCharacter}>Show characters</button>
+    <div className="container">
+      <h1>Personajes de Star Wars</h1>
+      <button onClick={getCharacter}>Mostrar personajes</button>
       <div>
         {characters.map((character, index) => (
           <Card key={index} infoCharacter={character} />
